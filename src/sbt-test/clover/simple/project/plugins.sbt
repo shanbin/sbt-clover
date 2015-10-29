@@ -1,9 +1,3 @@
 resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
-{
-  val pluginVersion = System.getProperty("plugin.version")
-  if(pluginVersion == null)
-    throw new RuntimeException("""|The system property 'plugin.version' is not defined.
-                                 |Specify this property using the scriptedLaunchOpts -D.""".stripMargin)
-  else addSbtPlugin("io.github.shanbin" %% "sbt-clover" % pluginVersion)
-}
+addSbtPlugin("com.github.shanbin" %% "sbt-clover" % "0.0.1-SNAPSHOT")

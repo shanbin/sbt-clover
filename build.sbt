@@ -1,11 +1,11 @@
 name := "sbt-clover"
 
-organization := "io.github.shanbin"
+organization := "com.github.shanbin"
 
 sbtPlugin := true
 
 ScriptedPlugin.scriptedSettings
 
-scriptedLaunchOpts ++= Seq(
-  "-Dplugin.version=" + version.value
-)
+scriptedBufferLog := false
+
+libraryDependencies += "com.atlassian.clover" % "clover" % "4.0.6"
