@@ -13,7 +13,7 @@ resolvers += Resolver.url("Plugins",
 addSbtPlugin("com.github.shanbin" %% "sbt-clover" % "0.0.1")
 ```
 
-A single task to run tests with instrumented sources and generate XML and HTMl reports
+A single task to run tests with instrumented sources and generate XML and HTML reports
 
 ```
 sbt clover:clover
